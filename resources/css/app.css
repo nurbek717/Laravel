@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.list_hover{
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.list_hover:after{
+    content: "";
+    display: block;
+    top: 10%;
+    left: 99px;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: red;
+
+}
+.list_hover:before{
+    content: "";
+    display: block;
+    top: 90%;
+    left: -80px;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: red;
+}
+.list_hover:hover:after{
+    top: 10%;
+    transform: translateX(-90px);
+    transition: 0.5s;
+}.list_hover:hover:before{
+    top: 90%;
+     left: 70px;
+    transform: translateX(-62px);
+    transition: 1s;
+}
+.rounded-md1:hover{
+    border-radius: 7px;
+    background: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+.rounded-md1{
+    border-radius:7px ;
+}
+body{
+  background: linear-gradient(to right, #0f2027 , #2c5364);
+}
+
+.home_text{
+    text-transform: uppercase;
+   font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+.sectiom_navbar{
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background: linear-gradient(to right, #134e5e, #71b280);
+}
+.studen_id{
+    color: red;
+}
+.text-sm{
+    color: #ffffff;
+}
+.border{
+    background: #e6bd69;
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+h3{
+    text-align: center;
+    color: #ffffff;
+}
